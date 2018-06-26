@@ -1,0 +1,58 @@
+<html>
+ <head>
+ <script src="/home/ukistu04/Documents/jquery/jquery-3.3.1.min.js"></script>
+ </head>
+ <script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("img").hide();
+    });
+    $("#show").click(function(){
+        $("img").show();
+    });
+
+    $("#toggle").click(function(){
+        $("img").toggle();
+    });
+    $("#slideup").click(function(){
+        $("img").slideUp();
+    });
+    $("#slidedown").dblclick(function(){
+        $("img").slideDown();
+    });
+    $("#slidetoggle").dblclick(function(){
+        $("img").slideToggle();
+    });
+
+      $("#flip").dblclick(function(){
+        $("img").slidetoggle();
+    });
+    $("#panel").click(function(){
+      $("img").panel();
+  });
+  $("#fadein").keydown(function(){
+    $("img").fadeIn();
+});
+$("#fadeout").keydown(function(){
+  $("img").fadeOut();
+});
+$("#fadetoggle").keydown(function(){
+  $("img").fadeToggle();
+});
+});
+</script>
+ <body>
+   <button id="flip">Click to slide down panel</button>
+   <button id="panel">Hello world!</button>
+ <button id="hide">image hide</button>
+ <button id="show">image show</button>
+ <button id="toggle">image toggle</button>
+ <button id="slideup">slideup</button>
+ <button id="slidedown">slidedown</button>
+ <button id="slidetoggle">slidetoggle</button>
+ <button id="fadein">fadein</button>
+ <button id="fadeout">fadeout</button>
+ <button id="fadetoggle">fadetoggle</button>
+ <img src="/home/ukistu04/Downloads/thumb-1920-411820.jpg"></p>
+ </body>
+ </html>
